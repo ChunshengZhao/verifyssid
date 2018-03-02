@@ -45,7 +45,7 @@ int verifyssid(const unsigned char *s)
 
     for (i = 0; (c = s[i++]);) {
         if ((c & 0x80) == 0) {//ascii flag
-                if(c < 0x20 || c > 0x7f){
+                if(c < 0x20 || c == 0x7f){
                     return 0;
                 }
         } else if ((c & 0xe0) == 0xc0) {//utf8 flag
