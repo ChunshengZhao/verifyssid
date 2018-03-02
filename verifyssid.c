@@ -39,7 +39,7 @@ int verifyssid(const unsigned char *s)
     int i;
     unsigned char c;
 
-    if(strlen(s)>32){//32 characters
+    if(!s || strlen(s)>32){//32 characters
         return 0;
     }
 
