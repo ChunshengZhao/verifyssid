@@ -4,7 +4,7 @@
 VerifySSID function (UTF-8 supported)
 
 ## build
-./gcc verifyssid.c -o verifyssid.o main.c -o main  
+./gcc verifyssid.c main.c -o main  
 ./main
 
 ## screenshot
